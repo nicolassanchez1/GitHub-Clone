@@ -1,0 +1,76 @@
+.profile{
+    // border: 2px solid white;
+    width: 80%;
+    height: 700px;
+    &__img{
+        position: relative;
+        bottom: 30px;
+        width: 296px;
+        height: 296px;
+        border-radius: 100%;
+        border: 2px solid #272b33;
+        z-index: 1000;
+    }
+    &__name{
+        position: relative;
+        bottom: 12px;
+        font-size: 26px;
+        font-weight: 600;
+        color: #C9D1D9;
+    }
+    &__github{
+        position: relative;
+        bottom: 20px;
+        font-size: 20px;
+        color: #8B949E;
+    }
+    &__btn{
+        position: relative;
+        width: 95%;
+        bottom: 5px;
+        border-radius: 7px;
+        font-size: 14px;
+        padding: 5px;
+        background-color: #21262d;
+        border: 1px solid #363b42;
+        color: #C9D1D9;
+        font-weight: 600;
+        transition: .2s all !important;
+        margin-bottom: 10px;
+        &:hover{
+            background-color: #30363d;
+            border: 1px solid #8b949e;
+            transition-duration: .1s all !important;
+        }
+    }
+    &__job{
+        color: #C9D1D9;
+        font-size: 16px;
+    }
+    &__follow{
+        margin-top: 15px;
+    }
+    &__info {
+        border-bottom: 1px solid #21262d;
+        padding: 15px 0;
+    }
+}
+
+.number-followers{
+    color: #C9D1D9;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+.text-followers{
+    color: #8B949E;
+    font-size: 14px;
+    cursor: pointer;
+    &:hover{
+        color: #58a6ff;
+    }
+}
+.text__info-profile{
+    color: #C9D1D9;
+    font-size: 14px;
+}

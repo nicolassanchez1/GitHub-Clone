@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0d1117;
+}
+.fa-github{
+    font-size: 33px;
+}
+.fa-caret-down{
+    font-size: 13px;
+    margin-left: 3px;
+}
+.activeContent{
+    border-bottom: 2px solid #f78166 !important;
+    padding: 13px 30px !important;
+}
+.bold{
+    font-weight: 600;
+}
+
+.color-second{
+    color: #8B949E;
+}

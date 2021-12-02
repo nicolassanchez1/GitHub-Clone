@@ -1,0 +1,5 @@
+export const types = {
+  SET_USER: 'SET_USER',
+  SET_REPOSITORIES: 'SET_REPOSITORIES',
+  SET_ERROR: 'SET_ERROR'
+}

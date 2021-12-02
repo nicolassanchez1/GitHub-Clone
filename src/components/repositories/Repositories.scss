@@ -1,0 +1,92 @@
+.repo {
+  position: relative;
+  width: 93%;
+
+  &__search {
+    padding: 15px 0;
+    border-bottom: 1px solid #21262d;
+  }
+}
+.repositories {
+  border-bottom: 1px solid #21262d;
+  padding: 15px 0;
+  &__info {
+    &-title {
+      font-size: 20px;
+      color: #58a6ff;
+    }
+    &-public {
+      position: relative;
+      bottom: 5px;
+      text-transform: capitalize;
+      display: inline-block;
+      border: 1px solid #292e36;
+      font-size: 12px;
+      padding: 0 7px 1px 7px;
+      line-height: 18px;
+      color: #8b949e;
+      border-radius: 10px;
+    }
+    &-descrip {
+      color: #8b949e;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    &-repo {
+      color: #8b949e;
+      font-size: 12px;
+    }
+  }
+  &__button > button {
+    display: block;
+    padding: 3px 10px;
+    font-size: 12px;
+  }
+}
+
+.topic {
+  padding: 2px 7px;
+  color: #58a6ff;
+  background-color: rgba(56, 139, 253, 0.15);
+  border: 1px solid transparent;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-bottom: 10px;
+  &:hover {
+    background-color: #1f6feb;
+    color: #f0f6fc;
+  }
+}
+
+.blue-ball,
+.yellow-ball,
+.red-ball,
+.orange-ball,
+.orange-two-ball, .purple-ball,.green-ball {
+  position: relative;
+  top: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: #2b7489;
+}
+.yellow-ball {
+  background-color: #f1e05a !important;
+}
+.red-ball {
+  background-color: #701516 !important;
+}
+.orange-ball {
+  background-color: #b07219 !important;
+}
+.orange-two-ball {
+  background-color: #e34c26 !important;
+}
+.purple-ball {
+  background-color: #6e4a7e !important;
+}
+.green-ball{
+  background-color: #3d6117 !important;
+
+}

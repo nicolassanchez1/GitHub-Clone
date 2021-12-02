@@ -1,0 +1,76 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "prettier": "prettier-config-standard",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/jsonapi-serializer": "^3.6.4",
+    "@types/node": "^12.0.0",
+    "@types/react-router-dom": "^5.1.8",
+    "ahooks": "^2.10.5",
+    "axios": "^0.24.0",
+    "commitizen": "^4.2.3",
+    "prettier": "^2.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-query": "^3.16.0",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "redux": "^4.1.2",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.4.1",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
+  },
+  "proxy": "http://localhost:3000",
+  "scripts": {
+    "start": "cross-env PORT=3001 BROWSER=none ESLINT_NO_DEV_ERRORS=true react-scripts -r @cypress/instrument-cra start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "npx prettier --write",
+      "ts-standard --fix"
+    ]
+  },
+  "devDependencies": {
+    "@cypress/instrument-cra": "^1.4.0",
+    "@testing-library/dom": ">=7.21.4",
+    "@testing-library/react-hooks": "^7.0.0",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "lint-staged": "^10.5.4",
+    "nock": "^13.1.0",
+    "prettier-config-standard": "^4.0.0",
+    "react-test-renderer": "^17.0.2",
+    "standard": "^16.0.3",
+    "ts-standard": "^10.0.0"
+  },
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "reportWebVitals.ts",
+      "index.tsx"
+    ],
+    "coverageThreshold": {}
+  }
+}

@@ -1,0 +1,61 @@
+.header-input {
+  width: 275px;
+  padding: 2px 0 3px 12px;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: whitesmoke;
+  transition: 0.2s all;
+
+  &::placeholder {
+    color: #cdcec3;
+    font-size: 14px;
+  }
+  &:focus {
+    background-color: #0d1117;
+    border: none;
+    width: 500px;
+    border: 1px solid #4373aa;
+    box-shadow: none;
+  }
+}
+
+.repo-input {
+  width: 600px;
+  border: 1px solid #30363d;
+  background-color: #0d1117;
+  padding: 3px 15px;
+  border-radius: 6px;
+  color: whitesmoke !important;
+  &::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &:focus {
+    background-color: #0d1117 !important;
+  }
+}
+
+.input-icon{
+  position: absolute;
+  border: 1px solid #30363d;
+  border-radius: 3px;
+  padding: 4px;
+  top: 5px;
+  right: 8px;
+  position: absolute;
+  color: #b4b6b8;
+  cursor: pointer;
+  font-size: 12px;
+  z-index: 10000;
+  
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    /*sirve para que a la hora de seleccionar una opcion guardada no muestre color de fondo y el color de la letra sea parecida a la anterior  */
+    transition: background-color 5000s ease-in-out 0s !important;
+    -webkit-box-shadow: 0 0 0px 1000px unset; 
+    -webkit-text-fill-color: #757677 !important;}

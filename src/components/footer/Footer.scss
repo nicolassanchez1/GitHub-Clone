@@ -1,0 +1,31 @@
+footer{
+    border-top: 1px solid #21262d;
+    width: 92%;
+    height: 115px;
+    margin: auto;
+}
+
+.footer{
+    &__cophy{
+        &-icon{
+            color: #484f58;
+            font-size: 25px !important;
+        }
+        &-text{
+            font-size: 12px;
+            color:  #8B949E;
+            margin-right: 30px;
+        }
+    }
+    &__links{
+        &-text{
+            color: #58A6FF;
+            text-decoration: none;
+            font-size: 12px;
+            &:hover{
+            color: #58A6FF;
+            text-decoration: underline;
+            }
+        }
+    }
+}
