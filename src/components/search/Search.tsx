@@ -1,58 +1,39 @@
-// import React, { useState, ChangeEvent } from 'react'
-// import { ISearchProps } from './'
-// import './Search.scss'
 
-// const Search: React.FC<ISearchProps> = ({
-//   placeholder = '',
-//   className = '',
-//   name = '',
-//   search = '',
-//   handleChange= () => {},
-//   handleClick= () => {},
-//   value = ''
-// }) => {
-
-//   return (
-//     <>
-//       <input
-//         type="text"
-//         placeholder={placeholder}
-//         className={className}
-//         name={name}
-//         value={value}
-//         onChange={handleChange}
-//       />
-//       {search !== '' && <i className={search} onClick={handleClick}></i>}
-//     </>
-//   )
-// }
-
-// export default Search
-
-import React, { useState, ChangeEvent } from 'react'
-import { ISearchProps } from './'
+import React, { useEffect } from 'react'
+import { ISearchProps, changeInputSize } from './'
 import './Search.scss'
 
 export const Search: React.FC<ISearchProps> = ({
   placeholder = '',
   className = '',
   name = '',
-  search = '',
+  search = false,
   handleChange = () => { },
   handleClick = () => { },
-  value = ''
+  value = '',
+  id = ''
 }) => {
+
+  useEffect(() => {
+    if (id) document.addEventListener('click', (e) => changeInputSize(e, id))
+  }, [])
+
+  const handleClickInput = ({ target }: any, id: string) => {
+    if (id && !target.classList.contains('input-icon')) {
+      const input: any = document.querySelector(`#${id}`);
+      input.style.width = '400px'
+    }
+  }
+  
+  const restProps = { value, name, className, id, placeholder, onChange: handleChange }
+
   return (
-    <div className="position-relative">
+    <div className="position-relative d-flex justify-content-between" onClick={(e) => handleClickInput(e, id)}>
       <input
         type="text"
-        placeholder={placeholder}
-        className={className}
-        name={name}
-        value={value}
-        onChange={handleChange}
+        {...restProps}
       />
-      {search !== '' && <i className={`input-icon ${search}`} onClick={handleClick} />}
+      {search && <i className="input-icon fas fa-search search-icon" onClick={handleClick} />}
     </div>
   )
 }

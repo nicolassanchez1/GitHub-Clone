@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { v4 as uuid } from 'uuid';
 import { RootStateOrAny, useDispatch, useSelector } from 'react-redux'
 import { getReporitories, getUser } from '../../redux/actions/user'
 import { HEADER__ITEMS } from '../../utils/data'
@@ -42,11 +43,12 @@ const Header = () => {
             <Search
               placeholder="Search or jump to..."
               className="form-control header-input"
-              search="fas fa-search"
+              search
               name="user"
               value={userName}
               handleChange={handleChange}
               handleClick={handleClick}
+              id="searchId"
             />
           </div>
           {HEADER__ITEMS.map((item) => (
