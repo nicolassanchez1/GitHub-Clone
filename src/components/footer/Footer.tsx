@@ -5,7 +5,7 @@ import './Footer.scss'
 
 const Footer = () => {
   return (
-    <footer className="d-flex align-items-center">
+    <footer className="d-flex align-items-center mt-2">
       <div className="footer d-flex align-items-center flex-wrap">
         <div className="footer__cophy d-flex align-items-center gap-2">
           <i className="fab fa-github footer__cophy-icon" />

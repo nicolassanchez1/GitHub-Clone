@@ -20,12 +20,10 @@ const setError = (error: string) => ({
 export const getReporitories = (user: string) => {
   return async (dispatch: any) => {
     try {
-      const {data, status} = await axios.get(`${URL}/${user}/repos`)
-      console.log(data, status)
+      const { data } = await axios.get(`${URL}/${user}/repos`)
       dispatch(setRepositories(data))
     } catch (error) {
-      console.log(error)
-        setError(String(error))
+      setError(String(error))
     }
   }
 }
@@ -36,7 +34,7 @@ export const getUser = (user: string) => {
       const { data } = await axios.get(`${URL}/${user}`)
       dispatch(setUser(data))
     } catch (error) {
-        setError(String(error))
+      setError(String(error))
     }
   }
 }

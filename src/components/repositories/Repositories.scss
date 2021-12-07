@@ -124,3 +124,31 @@
 .repository-line {
   border-bottom: 1px solid #21262d;
 }
+
+.not-found{
+  display: block;
+  border-bottom:1px solid #21262d;
+  color: #C9D1D9;
+  padding: 15px 0;
+  font-size: 14px;
+  &-clear{
+    color: #8b949e;
+    cursor: pointer;
+    &:hover{
+      color: #58a6ff;
+    }
+  }
+  &-deleted{
+    background-color: #6e7681;
+    font-size: 14px;
+    padding: 0 5px;
+    border-radius: 6px;
+    font-weight: 500;
+    margin-right: 2px;
+  }
+}
+.dont-repositories{
+  font-size: 20px;
+  color: #C9D1D9;
+  height: 170px;
+}
