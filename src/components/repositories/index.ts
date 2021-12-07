@@ -21,6 +21,10 @@ export interface ILanguageClass {
   [key: string]: string
 }
 
+export interface IFilterFunction {
+  [key: string]: (key: string) => void
+}
+
 export const languageClass: ILanguageClass = {
   TypeScript: 'blue-ball',
   JavaScript: 'yellow-ball',
@@ -48,23 +52,25 @@ export const selectInitialState = {
   sort: false
 }
 
+export const filters = ['type', 'language', 'sort']
+
 export const typeOptions = ['All', 'Sources', 'Forks', 'Archived', 'Mirrors']
 
 export const sortOptions = ['Last updated', 'Name', 'Stars']
 
-export const options = {
+export const options:any = {
   type: typeOptions,
   sort: sortOptions,
   initialState: optionInitialState,
-  select: selectInitialState
+  select: selectInitialState,
 }
 
-export const getTopics = (repositories: any[]): string[] => {
-  const topicList: string[] = ['All']
+export const getLanguageList = (repositories: any[]): string[] => {
+  const languageList: string[] = ['All']
   repositories.forEach((item: any) => {
-    if (!topicList.includes(item.language)) {
-      topicList.push(item.language)
+    if (!languageList.includes(item.language) && item.language) {
+      languageList.push(item.language)
     }
   })
-  return topicList
+  return languageList
 }

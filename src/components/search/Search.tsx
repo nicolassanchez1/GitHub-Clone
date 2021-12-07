@@ -33,13 +33,13 @@ import React, { useState, ChangeEvent } from 'react'
 import { ISearchProps } from './'
 import './Search.scss'
 
-const Search: React.FC<ISearchProps> = ({
+export const Search: React.FC<ISearchProps> = ({
   placeholder = '',
   className = '',
   name = '',
   search = '',
-  handleChange = () => {},
-  handleClick = () => {},
+  handleChange = () => { },
+  handleClick = () => { },
   value = ''
 }) => {
   return (
@@ -52,9 +52,7 @@ const Search: React.FC<ISearchProps> = ({
         value={value}
         onChange={handleChange}
       />
-      {search !== '' && <i className={`input-icon ${search}`} onClick={handleClick}/>}
+      {search !== '' && <i className={`input-icon ${search}`} onClick={handleClick} />}
     </div>
   )
 }
-
-export default Search

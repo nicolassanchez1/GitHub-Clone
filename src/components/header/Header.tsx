@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { RootStateOrAny, useDispatch, useSelector } from 'react-redux'
 import { getReporitories, getUser } from '../../redux/actions/user'
 import { HEADER__ITEMS } from '../../utils/data'
-import { InputEvent } from '../search/'
-import Search from '../search/Search'
-import Spinner from '../spinner/Spinner'
+import { InputEvent } from '../search'
+import { Search, Spinner } from '../'
+
 import './Header.scss'
 
 const Header = () => {

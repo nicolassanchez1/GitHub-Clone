@@ -1,0 +1,11 @@
+.paginator {
+  &__control {
+    border: none;
+    color: #58a6ff;
+    border: 1px solid #ccc;
+    background-color: rgba(240, 246, 252, 0.1);
+  }
+  &__control-disabled {
+    background-color: #0d1117;
+  }
+}

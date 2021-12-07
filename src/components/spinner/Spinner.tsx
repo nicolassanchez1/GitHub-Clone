@@ -1,7 +1,7 @@
 import React from 'react'
 import './Spiner.scss'
 
-const Spinner = () => {
+export const Spinner = () => {
   return (
     <div className="spinner d-flex justify-content-center align-items-center">
       <div className="sk-chase">
@@ -16,4 +16,3 @@ const Spinner = () => {
   )
 }
 
-export default Spinner

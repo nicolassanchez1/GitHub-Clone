@@ -1,16 +1,16 @@
 import React from 'react'
 import { capitalCase } from '../../utils/text'
-import {ISelectProps} from './'
+import { ISelectProps } from './'
 import Button from '../button-repo/Button'
 import './Select.scss'
 
-const Select: React.FC<ISelectProps> = ({
+export const Select: React.FC<ISelectProps> = ({
   options = [],
   value = '',
   name = '',
   showOptions = false,
-  setShowOptions = (): void => {},
-  selectOption = (): void => {}
+  setShowOptions = (): void => { },
+  selectOption = (): void => { }
 }) => {
   const handleChangeOption = (value: string) => {
     selectOption(name, value)
@@ -41,4 +41,3 @@ const Select: React.FC<ISelectProps> = ({
   )
 }
 
-export default Select

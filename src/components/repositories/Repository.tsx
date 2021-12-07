@@ -1,6 +1,5 @@
 import React from 'react'
 import Button from '../button-repo/Button'
-import Topics from './Topics'
 import { parseDate } from '../../utils/date'
 import { IRepositoryProps, languageClass } from '.'
 import './Repositories.scss'
@@ -19,7 +18,7 @@ const Repository: React.FC<IRepositoryProps> = ({ item }) => {
         {item.topics ? (
           <div className="topics d-flex flex-wrap">
             {item.topics.map((topics: any, index: number) => (
-              <Topics key={index} topics={topics} />
+              <span key={index} className="topic">{topics}</span>
             ))}
           </div>
         ) : null}

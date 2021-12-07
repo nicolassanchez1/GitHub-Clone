@@ -14,7 +14,7 @@
   padding: 20px 0;
   &__info {
     @media screen and (max-width: 652px) {
-        width: 80%;
+      width: 80%;
     }
     &-title {
       text-decoration: none;
@@ -22,9 +22,9 @@
       color: #58a6ff;
       cursor: pointer;
       font-weight: 600;
-      &:hover{
-      color: #58a6ff;
-      text-decoration: underline;
+      &:hover {
+        color: #58a6ff;
+        text-decoration: underline;
       }
     }
     &-public {
@@ -56,7 +56,7 @@
     padding: 3px 10px;
     font-size: 12px;
   }
-  &__graph{
+  &__graph {
     @media screen and (max-width: 652px) {
       display: none !important;
     }
@@ -82,7 +82,9 @@
 .yellow-ball,
 .red-ball,
 .orange-ball,
-.orange-two-ball, .purple-ball,.green-ball {
+.orange-two-ball,
+.purple-ball,
+.green-ball {
   position: relative;
   top: 3px;
   width: 12px;
@@ -90,22 +92,35 @@
   border-radius: 100%;
   background-color: #2b7489;
 }
+
 .yellow-ball {
   background-color: #f1e05a !important;
 }
+
 .red-ball {
   background-color: #701516 !important;
 }
+
 .orange-ball {
   background-color: #b07219 !important;
 }
+
 .orange-two-ball {
   background-color: #e34c26 !important;
 }
+
 .purple-ball {
   background-color: #6e4a7e !important;
 }
-.green-ball{
-  background-color: #3d6117 !important;
 
+.green-ball {
+  background-color: #3d6117 !important;
+}
+
+.text-md {
+  font-size: 14px;
+}
+
+.repository-line {
+  border-bottom: 1px solid #21262d;
 }
