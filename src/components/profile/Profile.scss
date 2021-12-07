@@ -1,76 +1,130 @@
-.profile{
-    // border: 2px solid white;
-    width: 80%;
-    height: 700px;
-    &__img{
-        position: relative;
-        bottom: 30px;
-        width: 296px;
-        height: 296px;
-        border-radius: 100%;
-        border: 2px solid #272b33;
-        z-index: 1000;
+.profile {
+  width: 100%;
+  padding: 0 10px 0 0;
+  @media screen and (max-width: 770px) {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    position: relative;
+    border-bottom: 1px solid #21262d;
+  }
+  &__img {
+    position: relative;
+    bottom: 35px;
+    width: 296px;
+    height: 296px;
+    border-radius: 100%;
+    border: 2px solid #272b33;
+    z-index: 1000;
+    @media screen and (max-width: 1010px) {
+      width: 256px;
+      height: 256px;
     }
-    &__name{
-        position: relative;
-        bottom: 12px;
-        font-size: 26px;
-        font-weight: 600;
-        color: #C9D1D9;
+    @media screen and (max-width: 770px) {
+      bottom: 0 !important;
+      width: 114px;
+      height: 114px;
+      order: 1;
     }
-    &__github{
-        position: relative;
-        bottom: 20px;
-        font-size: 20px;
-        color: #8B949E;
+  }
+  &__name {
+    position: relative;
+    bottom: 12px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #c9d1d9;
+    @media screen and (max-width: 770px) {
+      bottom: 0;
+      top: 30px;
+      left: 15px;
+      order: 2;
     }
-    &__btn{
-        position: relative;
-        width: 95%;
-        bottom: 5px;
-        border-radius: 7px;
-        font-size: 14px;
-        padding: 5px;
-        background-color: #21262d;
-        border: 1px solid #363b42;
-        color: #C9D1D9;
-        font-weight: 600;
-        transition: .2s all !important;
-        margin-bottom: 10px;
-        &:hover{
-            background-color: #30363d;
-            border: 1px solid #8b949e;
-            transition-duration: .1s all !important;
-        }
+  }
+  &__github {
+    position: relative;
+    bottom: 20px;
+    font-size: 20px;
+    color: #8b949e;
+    @media screen and (max-width: 770px) {
+      position: absolute;
+      bottom: 0;
+      top: 60px;
+      left: 130px !important;
+      display: block;
+      order: 3;
     }
-    &__job{
-        color: #C9D1D9;
-        font-size: 16px;
+  }
+  &__btn {
+    position: relative;
+    width: 90%;
+    bottom: 5px;
+    border-radius: 7px;
+    font-size: 14px;
+    padding: 5px;
+    background-color: #21262d;
+    border: 1px solid #363b42;
+    color: #c9d1d9;
+    font-weight: 600;
+    transition: 0.2s all !important;
+    margin-bottom: 10px;
+    &:hover {
+      background-color: #30363d;
+      border: 1px solid #8b949e;
+      transition-duration: 0.1s all !important;
     }
-    &__follow{
-        margin-top: 15px;
+    @media screen and (max-width: 770px) {
+      width: 100%;
+      margin-top: 20px;
+      order: 7 !important;
     }
-    &__info {
-        border-bottom: 1px solid #21262d;
-        padding: 15px 0;
+  }
+  &__job {
+    color: #c9d1d9;
+    font-size: 16px;
+    @media screen and (max-width: 770px) {
+      order: 4 !important;
+      margin: 20px 0;
     }
+  }
+  &__follow {
+    margin-top: 15px;
+    @media screen and (max-width: 770px) {
+      margin-top: 0px !important;
+      order: 6 !important;
+    }
+  }
+  &__info {
+    border-bottom: 1px solid #21262d;
+    padding: 15px 0;
+    width: 90%;
+    @media screen and (max-width: 770px) {
+      padding: 5px 0;
+      border-bottom: none !important;
+      order: 5 !important;
+    }
+    &-company,
+    &-location {
+      @media screen and (max-width: 770px) {
+        display: none !important;
+      }
+    }
+  }
 }
 
-.number-followers{
-    color: #C9D1D9;
-    font-weight: 600;
-    font-size: 14px;
-    cursor: pointer;
+.number-followers {
+  color: #c9d1d9;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
 }
-.text-followers{
-    color: #8B949E;
-    font-size: 14px;
-    cursor: pointer;
-    &:hover{
-        color: #58a6ff;
-    }
+.text-followers {
+  color: #8b949e;
+  font-size: 14px;
+  cursor: pointer;
+  &:hover {
+    color: #58a6ff;
+  }
 }
-.text__info-profile{
-    color: #C9D1D9;
-    font-size: 14px;
+.text__info-profile {
+  color: #c9d1d9;
+  font-size: 14px;
 }

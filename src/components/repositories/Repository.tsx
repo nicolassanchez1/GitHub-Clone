@@ -9,26 +9,26 @@ const Repository: React.FC<IRepositoryProps> = ({ item }) => {
   return (
     <div className="repositories d-flex align-items-center justify-content-between">
       <div className="repositories__info d-flex flex-column">
-        <h2 className="repositories__info-title">
-          {item.name} <span className="repositories__info-public">public</span>
-        </h2>
+        <a href={item.html_url} className="repositories__info-title">
+          {item.name}<span className="repositories__info-public">public</span>
+        </a>
         {item.description && (
           <span className="repositories__info-descrip">{item.description}</span>
         )}
 
         {item.topics ? (
-          <div className="topics d-flex">
+          <div className="topics d-flex flex-wrap">
             {item.topics.map((topics: any, index: number) => (
               <Topics key={index} topics={topics} />
             ))}
           </div>
         ) : null}
 
-        <div className="repositories__info-repo d-flex">
+        <div className="repositories__info-repo d-flex flex-wrap">
           {item.language && (
             <>
               <span className={languageClass[item.language]} />
-              <span className='mx-1'>{item.language}</span>
+              <span className="mx-1">{item.language}</span>
             </>
           )}
 
@@ -46,8 +46,8 @@ const Repository: React.FC<IRepositoryProps> = ({ item }) => {
         </div>
       </div>
       <div className="repositories__button d-flex flex-column justify-content-center align-items-end mt-3">
-        <Button name="Star" />
-        <img src="https://i.ibb.co/ZBJd2xk/grafica.png" alt="grafica" />
+        <Button text="Star" />
+        <img className='repositories__graph' src="https://i.ibb.co/ZBJd2xk/grafica.png" alt="grafica" />
       </div>
     </div>
   )

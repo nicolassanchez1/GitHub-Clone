@@ -1,3 +1,4 @@
-export interface IButtonProps{
-    name: string;
+export interface IButtonProps {
+  text: string
+  onClick?: () => void
 }

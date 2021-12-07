@@ -34,12 +34,6 @@ export const HEADER__ITEMS = [
     iconArrowDown: 'fas fa-caret-down text-white',
     icon: 'fas fa-plus text-white',
     id: 6
-  },
-  {
-    name: '',
-    iconArrowDown: 'fas fa-caret-down text-white',
-    icon: 'far fa-user text-white',
-    id: 7
   }
 ]
 
@@ -63,8 +57,7 @@ export const NAV__ITEMS = [
   }
 ]
 
-
-export const FOOTER__ITMES = [
+export const FOOTER__ITEMS = [
   {
     name: 'Terms',
     url: 'https://docs.github.com/en/github/site-policy/github-terms-of-service'
@@ -110,3 +103,8 @@ export const FOOTER__ITMES = [
     url: 'https://github.com/about'
   }
 ]
+
+window.addEventListener('scroll', function () {
+  const nav = this.document.querySelector('nav')
+  nav?.classList.toggle('sticky', window.scrollY > 80)
+})

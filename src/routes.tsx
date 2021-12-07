@@ -9,7 +9,6 @@ import {
 import EnterUser from './components/enter-user/EnterUser'
 import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
-import Nav from './components/nav/Nav'
 import Home from './pages/home/Home'
 
 export const AppRouter = () => {
@@ -17,15 +16,7 @@ export const AppRouter = () => {
   return (
     <Router>
       <Header />
-      <Nav />
-      <Switch>
-        <Route
-          exact
-          path="/"
-          component={repositories?.length ? Home : EnterUser}
-        />
-        <Redirect to="/" />
-      </Switch>
+      {repositories?.length ? <Home /> : <EnterUser />}
       <Footer />
     </Router>
   )

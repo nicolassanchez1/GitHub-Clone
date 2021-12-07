@@ -1,10 +1,10 @@
-# View Project
+# Getting Started with Create React App
 
-![captura](https://user-images.githubusercontent.com/87143555/144370674-51e11176-0c40-44d7-8e45-0c5b4501cd51.png)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
-##
-Demo : https://copy-github.netlify.app/
+In the project directory, you can run:
 
 ### `yarn start`
 

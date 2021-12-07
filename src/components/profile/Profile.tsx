@@ -17,7 +17,7 @@ function Profile() {
       <button className="profile__btn">Follow</button>
       <span className="profile__job">{bio}</span>
       <div className="profile__follow d-flex gap-1">
-        <div className="">
+        <div>
           <i className="fas fa-users text-followers" />
           <span className="number-followers"> {followers} </span>
           <span className="text-followers">followers</span>
@@ -30,7 +30,7 @@ function Profile() {
         <span className="text-white">·</span>
         <div className="starts">
           <i className="far fa-star text-followers"></i>
-          <span className="number-followers"> 36 </span>
+          <span className="number-followers"> 39 </span>
         </div>
       </div>
 

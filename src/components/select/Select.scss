@@ -1,0 +1,26 @@
+.select {
+  &__options {
+    width: 300px;
+    right: 0;
+    top: calc(100% + 5px);
+    font-size: 12px;
+    background-color: #161b22;
+    border-bottom: 1px solid #21262d;
+    border-radius: 5px;
+    z-index: 40;
+  }
+  &__option {
+    cursor: pointer;
+    border-bottom: 1px solid #21262d;
+    &:hover {
+      background-color: rgba(110, 118, 129, 0.1);
+    }
+    &:last-of-type {
+      border: none;
+    }
+  }
+}
+
+.text-sm {
+  font-size: 10px;
+}
