@@ -1,4 +1,4 @@
-[url=https://postimg.cc/qgC2p0C3][img]https://i.postimg.cc/qgC2p0C3/img-1.png[/img][/url]
+[img]https://i.ibb.co/Tr4GMRm/img-1.png[/img]
 
 # Getting Started with Create React App
 
