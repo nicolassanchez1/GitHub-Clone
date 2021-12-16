@@ -11,9 +11,7 @@
 
 ![img-3](https://user-images.githubusercontent.com/87143555/146457966-87706dd4-6189-4f6d-8d02-2ad5414ce732.png)
 
-# 
-
-Demo en vivo: https://copy-github.netlify.app/
+# Demo en vivo: https://copy-github.netlify.app/
 
 
 ## Available Scripts
